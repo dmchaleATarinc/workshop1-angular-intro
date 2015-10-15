@@ -66,7 +66,8 @@ This should output **1.9.0+**
 
 In your current shell window, navigate to your Desktop.
 
-In Windows
+In Windows: `cd C:/users/[Username]/desktop`
+In Mac: `cd ~/Desktop`
 
 This following command will reach out to the github.com to grab the repo listed the url, make an exact clone of it from the name, at you are running the command from
 
