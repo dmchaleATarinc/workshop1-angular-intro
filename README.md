@@ -5,10 +5,6 @@ Initial tutorial to clone and install repo. Collaborators to decouple and enhanc
 ### Getting Started
 We will be working from your local computer to clone down a public repo from github.com to your desktop. Once in this directory is cloned locally, all files will be under .git version control. We will start with the initial boiler plate html file within the repo with the goal of decoupling and enhancing the logic of a very simple angular application. We will assume that you are working from a shell window from Desktop on your computer and an IDE of choice.
 
-Type the following:
-
-    git config --global url."https://".insteadOf git://
-
 <br />
 **Prequisite Actions**
 
