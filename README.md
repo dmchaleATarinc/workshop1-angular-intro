@@ -54,7 +54,7 @@ If you haven't configured your global .git configuration on your computer, the f
 
 ***Sidenote*** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com' when running any commands to clone resources (`npm install, bower install, git clone`). The last git config command should fix this.
 
-*Verify is installed correctly by typing the following:*
+*Verify git is installed correctly by typing the following:*
 
     git --version
 This should output **1.9.0+**
@@ -63,6 +63,11 @@ This should output **1.9.0+**
 
 
 **Step One** - ***Cloning Repo***
+
+In your current shell window, navigate to your Desktop.
+
+In Windows: `cd C:/users/[Username]/desktop`
+In Mac: `cd ~/Desktop`
 
 This following command will reach out to the github.com to grab the repo listed the url, make an exact clone of it from the name, at you are running the command from
 
@@ -88,7 +93,9 @@ The following command will point to a bower.json file at root of your current di
 
     bower install
 
-***Sidenote*** In Windows, npm doesn't recognize bower, try running: `./node_modules/bower/bin/bower install`
+***Sidenote*** In Windows, npm doesn't recognize bower, try running:
+
+`./node_modules/bower/bin/bower install`
 
 Open your IDE, and open the current folder from your desktop: **workshop1-angular-intro**. From here you can navigate around the directory and edit files that git will reflect
 
