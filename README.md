@@ -54,7 +54,7 @@ If you haven't configured your global .git configuration on your computer, the f
 
 ***Sidenote*** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com' when running any commands to clone resources (`npm install, bower install, git clone`). The last git config command should fix this.
 
-*Verify is installed correctly by typing the following:*
+*Verify git is installed correctly by typing the following:*
 
     git --version
 This should output **1.9.0+**
