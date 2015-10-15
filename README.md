@@ -5,8 +5,6 @@ Initial tutorial to clone and install repo. Collaborators to decouple and enhanc
 ### Getting Started
 We will be working from your local computer to clone down a public repo from github.com to your desktop. Once in this directory is cloned locally, all files will be under .git version control. We will start with the initial boiler plate html file within the repo with the goal of decoupling and enhancing the logic of a very simple angular application. We will assume that you are working from a shell window from Desktop on your computer and an IDE of choice.
 
-***Sidenote*** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com'. When running any commands to clone resources (`npm install, bower install, git clone`) if you get an error, try setting your .git config to use *https://* instead of *git://*
-
 Type the following:
 
     git config --global url."https://".insteadOf git://
@@ -24,7 +22,7 @@ Type the following:
 
 
 **2.** Install latest node.js <br />
-* [How to install node on windows](http://blog.teamtreehouse.com/install-node-js-npm-windows) | [How to install node on Mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
+* [Install Node.js](https://nodejs.org/en/) | [How to install Git on Windows](http://blog.teamtreehouse.com/install-node-js-npm-windows) | [How to install node on Mac](http://blog.teamtreehouse.com/install-node-js-npm-mac)
 
 *If you already have node installed, and want to upgrade type the following:*
 
@@ -43,16 +41,24 @@ This should output a version number **v0.12.0+**
 This should output a version number **2.0.3+**
 
 
-
 **3.** Install .git <br />
 * [How to install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* [Git Cheetsheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+* [Git Cheatsheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 
-***Optional*** [Configure global .git profile](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+**4.** Configure .git profile
+
+[Configure global .git profile](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
+
 If you haven't configured your global .git configuration on your computer, the first time you execute a command, you should be prompted to set a username and email at minimum- This is how public .git repositories will know who you are when you interact with them.
 
-*Verify is installed correctly by typing the following:*
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    git config to use *https://* instead of *git://
 
+***Sidenote*** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com' when running any commands to clone resources (`npm install, bower install, git clone`). The last git config command should fix this.
+
+*Verify is installed correctly by typing the following:*
 
     git --version
 This should output **1.9.0+**
@@ -74,3 +80,9 @@ Verify repo is under version control and you have no local changes
 
     git status
 
+
+**Step Two** - ***Installing Repo***
+
+The following command will point to a package.json at root of the directory your in, to install dependancies
+
+    npm install
