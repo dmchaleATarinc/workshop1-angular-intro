@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" ng-app="MyApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>{{title}}</title>
+  <meta name="description" content="Initial tutorial to clone and install repo">
+  <meta name="author" content="addevonly">
+    <link rel="stylesheet" type="text/css" href="bower_components/angular-material/angular-material.css">
+    <style>
+        md-content{
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        md-card{
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-controller="AppCtrl" md-theme="default">
+
+      <md-content class="main-content">
+        <md-card>
+          <img ng-src="{{imagePath}}" width="200px" height="200px">
+          <md-card-content>
+            <h2 class="md-title">{{contentTitle}}</h2>
+            <p>
+              When you think you are having a bad day, just think of a crazy cat.
+            </p>
+          </md-card-content>
+          <div>
+            <input placeholder="Set title" ng-model="contentTitle">
+            <button ng-click="setImagePath()">Feel Better</button>
+          </div>
+        </md-card>
+      </md-content>
+
+    </div>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.min.js"></script>
+    <script>
+
+    angular.module('MyApp', [])
+    .controller('AppCtrl', function($scope) {
+      $scope.title = 'Workshop1 Angular Intro';
+      $scope.contentTitle = '';
+      $scope.setImagePath = function(){
+        if (!$scope.imagePath){
+            $scope.imagePath = 'http://www.catgifs.org/wp-content/uploads/2013/09/119_crazycat_cat_gifs.gif';
+        } else {
+            $scope.imagePath = null;
+        }
+      };
+    });
+
+  </script>
+</body>
+</html>

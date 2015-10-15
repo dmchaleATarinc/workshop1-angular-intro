@@ -1,0 +1,23 @@
+{
+  "name": "workshop1-angular-intro",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Initial tutorial to clone and install repo. Collaborators to decouple and enhance app logic to industry standards.",
+  "scripts": {
+    "serve" : "http-server -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addevonly/workshop1-angular-intro.git"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "http-server": "latest",
+    "bower": "latest"
+  },
+  "author": "ndickisoATarinc",
+  "bugs": {
+    "url": "https://github.com/addevonly/workshop1-angular-intro/issues"
+  },
+  "homepage": "https://github.com/addevonly/workshop1-angular-intro#readme"
+}

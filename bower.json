@@ -1,0 +1,14 @@
+{
+  "name": "workshop1-angular-intro",
+  "version": "0.0.0",
+  "homepage": "https://github.com/addevonly/workshop1-angular-intro",
+  "description": "Initial tutorial to clone and install repo. Collaborators to decouple and enhance app logic to industry standards.",
+  "authors": [
+    "adddevonly"
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "angular": "1.4.4",
+    "angular-material": "0.10.0"
+  }
+}
