@@ -80,9 +80,22 @@ Verify repo is under version control and you have no local changes
 
     git status
 
+<br/>
 
 **Step Two** - ***Installing Repo***
 
-The following command will point to a package.json at root of the directory your in, to install dependancies
+The following command will point to a package.json file at root of your current your in to install required node modules
 
     npm install
+
+The following command will point to a bower.json file at root of your current directory your in to install required bower packages (js,css,html)
+
+    bower install
+
+***Sidenote*** In Windows, npm doesn't recognize bower, try running: `./node_modules/bower/bin/bower install`
+
+Open your IDE, and open the current folder from your desktop: **workshop1-angular-intro**. From here you can navigate around the directory and edit files that git will reflect
+
+In your shell window run the following command to serve up the index.html in the browser:
+
+    npm run serve
