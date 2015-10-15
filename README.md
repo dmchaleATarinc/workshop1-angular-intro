@@ -5,7 +5,7 @@ Initial tutorial to clone and install repo. Collaborators to decouple and enhanc
 ### Getting Started
 We will be working from your local computer to clone down a public repo from github.com to your desktop. Once in this directory is cloned locally, all files will be under .git version control. We will start with the initial boiler plate html file within the repo with the goal of decoupling and enhancing the logic of a very simple angular application. We will assume that you are working from a shell window from Desktop on your computer and an IDE of choice.
 
-*** Sidenote *** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com'. When running any commands to clone resources (`npm install, bower install, git clone`) if you get an error, try switching networks, or making sure the resource url begins with:  `https://`
+***Sidenote*** There are common problems with accesing github and other package registries under a firewall. A common log error for github is 'unable to connect to github.com'. When running any commands to clone resources (`npm install, bower install, git clone`) if you get an error, try switching networks, or making sure the resource url begins with:  `https://`
 
 **Prequisite Actions**
 
@@ -32,10 +32,10 @@ We will be working from your local computer to clone down a public repo from git
 *Verify node and it's package manager npm is installed correctly by typing the following:*
 
     node -v
-This should output a version number **v0.12.0+ **
+This should output a version number **v0.12.0+**
 
     npm -v
-This should output a version number **2.0.3+ **
+This should output a version number **2.0.3+**
 
 
 
@@ -50,12 +50,12 @@ If you haven't configured your global .git configuration on your computer, the f
 
 
     git --version
-This should output **1.9.0+ **
+This should output **1.9.0+**
 
 <br/>
 
 
-** Step One - *Cloning Repo* **
+**Step One** - ***Cloning Repo***
 
 This following command will reach out to the github.com to grab the repo listed the url, make an exact clone of it from the name, at you are running the command from
 
