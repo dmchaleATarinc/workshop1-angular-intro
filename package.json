@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Initial tutorial to clone and install repo. Collaborators to decouple and enhance app logic to industry standards.",
   "scripts": {
-    "serve" : "http-server -o"
+    "serve": "http-server -o"
   },
   "repository": {
     "type": "git",
@@ -12,8 +12,8 @@
   },
   "license": "UNLICENSED",
   "devDependencies": {
-    "http-server": "latest",
-    "bower": "latest"
+    "bower": "1.4.x",
+    "http-server": "latest"
   },
   "author": "addevonly",
   "bugs": {

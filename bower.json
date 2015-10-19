@@ -10,8 +10,5 @@
   "dependencies": {
     "angular": "1.4.4",
     "angular-material": "0.10.0"
-  },
-  "resolutions": {
-    "angular": "1.4.4"
   }
 }
